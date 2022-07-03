@@ -3,6 +3,7 @@
   font: 16px "URW Gothic L", sans-serif;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .total_price {
