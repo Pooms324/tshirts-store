@@ -1,0 +1,15 @@
+.products_page {
+  padding: 40px 20px;
+}
+
+@media screen and (max-width: 360px) {
+  .products_page {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .products_page {
+    padding: 40px 60px;
+  }
+}

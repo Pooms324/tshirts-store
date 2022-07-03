@@ -1,0 +1,41 @@
+.logo {
+  background: url("/src/assets/t-shirt.png");
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+}
+
+.nav-box {
+  padding: 20px 10px;
+  height: 35px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right h1 {
+  font: 20px "Optima", sans-serif;
+  font-weight: 600;
+}
+
+.left ul {
+  list-style-type: none;
+}
+
+.left li {
+  display: inline;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .nav-box {
+    padding: 20px 60px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .right {
+    font-size: 24px;
+  }
+}

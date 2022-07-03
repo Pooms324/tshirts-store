@@ -1,0 +1,84 @@
+.search_icon {
+  width: 35px;
+  height: 35px;
+}
+
+.filter_icon {
+  width: 35px;
+  width: 35px;
+}
+
+.filter_btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.search_btn {
+  border: none;
+  background-color: transparent;
+}
+
+.search_btn:hover {
+  cursor: pointer;
+}
+
+.filter_btn:hover {
+  background-color: rgb(255, 230, 221);
+  cursor: pointer;
+}
+
+.increase_btn {
+  border: none;
+  margin-right: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.increase_btn:hover {
+  cursor: pointer;
+}
+
+.increase_btn:disabled {
+  pointer-events: none;
+}
+
+.decrease_btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.decrease_btn:hover {
+  cursor: pointer;
+}
+
+.add_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.add_icon:hover {
+  width: 27px;
+  height: 27px;
+}
+
+.minus_icon {
+  width: 27px;
+  height: 27px;
+}
+
+.minus_icon:hover {
+  width: 29px;
+  height: 29px;
+}
+
+@media screen and (min-width: 590px) {
+  .decrease_btn {
+    margin-right: 20px;
+  }
+}

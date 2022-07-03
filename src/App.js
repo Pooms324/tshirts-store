@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { Suspense } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import "./App.css";
+import Navigation from "./navigation/Navigation";
+import ProductsPage from "./pages/ProductsPage";
+import CartPage from "./pages/CartPage";
+import Loading from "./components/uiElements/Loading";
+const productsPage = React.lazy(() => import("./pages/ProductsPage"));
+const cartPage = React.lazy(() => import("./pages/CartPage"));
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div data-testid="app_comp" className="App">
+      <Navigation>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Navigate replace to="/tshirts" />} />
+            <Route path="/tshirts" element={<ProductsPage />} />
+            <Route path="/tshirts/cart" element={<CartPage />} />
+            <Route path="*" element={<ProductsPage />} />
+          </Routes>
+        </Suspense>
+      </Navigation>
     </div>
   );
 }
-
-export default App;
