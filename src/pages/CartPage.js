@@ -45,14 +45,13 @@ const CartPage = () => {
         ) : (
           <Cart />
         )}
+        <NavLink to="/tshirts">
+          <Button className="back">Back</Button>
+        </NavLink>
       </div>
       <div>
         <div className="checkout_section">
-          {cartCtx.cart.length === 0 ? (
-            <NavLink className="nav_link" to="/tshirts">
-              <Button className="checkout_btn ">Back</Button>
-            </NavLink>
-          ) : (
+          {cartCtx.cart.length !== 0 && (
             <Button
               disabled={cartCtx.cart.length === 0}
               className="checkout_btn"
@@ -61,6 +60,7 @@ const CartPage = () => {
               Check Out
             </Button>
           )}
+
           {cartCtx.cart.length !== 0 && (
             <div className={classCheckOut}>
               {finalCheckOut}
@@ -71,9 +71,6 @@ const CartPage = () => {
             </div>
           )}
         </div>
-        <NavLink to="/tshirts">
-          <Button className="back">Back</Button>
-        </NavLink>
       </div>
     </section>
   );
