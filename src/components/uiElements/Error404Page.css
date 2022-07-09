@@ -1,0 +1,11 @@
+.text404 {
+  color: red;
+}
+
+.nav__link {
+  text-decoration: none;
+  margin-top: 20px;
+}
+.nav__link:hover {
+  color: chartreuse;
+}

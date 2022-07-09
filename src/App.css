@@ -35,3 +35,23 @@ body {
 .error_text_card {
   position: absolute;
 }
+
+.centered {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__text {
+  font-weight: bold;
+  color: red;
+  font-size: 12px;
+  margin-top: -20px;
+}
+
+.text404 {
+  font-size: 20px;
+}
