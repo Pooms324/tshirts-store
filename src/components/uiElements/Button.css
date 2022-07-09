@@ -200,15 +200,21 @@
 }
 
 .back {
-  background-color: blue;
-  color: white;
-  padding: 5px 10px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  background-color: rgb(255, 185, 56);
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  border-color: aqua;
+  box-shadow: 5px 5px 5px 0;
+  color: #3b185e;
+  transition: all 0.5s ease;
 }
 
 .back:hover {
-  background-color: bisque;
-  color: #000;
+  background-color: rgb(255, 166, 0);
+  box-shadow: 0 0 0 0;
+  color: rgb(96, 88, 88);
   cursor: pointer;
 }

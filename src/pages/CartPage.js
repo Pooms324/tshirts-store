@@ -71,6 +71,9 @@ const CartPage = () => {
             </div>
           )}
         </div>
+        <NavLink to="/tshirts">
+          <Button className="back">Back</Button>
+        </NavLink>
       </div>
     </section>
   );
